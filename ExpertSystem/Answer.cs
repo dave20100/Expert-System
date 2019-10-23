@@ -9,13 +9,7 @@ namespace ExpertSystem
     class Answer
     {
         public string answer { get; set; }
-
-        public Question nextQuestion { get; set; }
         public string resultOfQuiz { get; set; }
-
-        public Answer()
-        {
-
-        }
+        public Question nextQuestion { get; set; }
     }
 }

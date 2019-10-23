@@ -15,9 +15,14 @@ namespace ExpertSystem
             return currentQuestion.questionText;
         }
 
-        public void nextQuestion(int answerId)
+        public string nextQuestion(int answerId)
         {
-            currentQuestion = currentQuestion.answers[answerId].nextQuestion;
+            if(currentQuestion.answers[answerId].resultOfQuiz != null)
+            {
+                currentQuestion = currentQuestion.answers[answerId].nextQuestion;
+                return null;
+            }
+            return currentQuestion.answers[answerId].resultOfQuiz;
         }
     }
 }

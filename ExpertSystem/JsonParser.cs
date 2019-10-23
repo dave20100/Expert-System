@@ -8,5 +8,16 @@ namespace ExpertSystem
 {
     public static class JsonParser
     {
+        private static string readJson(string name)
+        {
+            using (System.IO.StreamReader sr = new System.IO.StreamReader(name))
+            {
+                return sr.ReadToEnd();
+            }
+        }
+
+        public static Quiz generateQuiz()
+        {
+        }
     }
 }
