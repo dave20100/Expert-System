@@ -8,11 +8,14 @@ namespace ExpertSystem
 {
     class Answer
     {
-        string answer { get; set; }
+        public string answer { get; set; }
 
-        public string showAnswer ()
+        public Question nextQuestion { get; set; }
+        public string resultOfQuiz { get; set; }
+
+        public Answer()
         {
-            return answer;
+
         }
     }
 }

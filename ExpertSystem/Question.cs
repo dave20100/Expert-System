@@ -8,7 +8,7 @@ namespace ExpertSystem
 {
     class Question
     {
-        List<Question> nextQuestions;
-        Answer answer { get; set; }
+        public string questionText;
+        public List<Answer> answers { get; set; }
     }
 }
