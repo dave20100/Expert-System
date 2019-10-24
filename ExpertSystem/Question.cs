@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace ExpertSystem
 {
-    class Question
+    public class Question
     {
         public string questionText;
+
+
         public List<Answer> answers { get; set; }
+
+        public Question(string questionText, List<Answer> answers)
+        {
+            this.questionText = questionText;
+            this.answers = answers;
+        }
+
     }
 }

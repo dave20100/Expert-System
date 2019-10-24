@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,9 @@ namespace ExpertSystem
 
         public static Quiz generateQuiz()
         {
+            var quiz = JsonConvert.DeserializeObject<Quiz>(readJson("treeSource.json"));
+            Console.WriteLine(quiz.getQuestion());
+            return quiz;
         }
     }
 }

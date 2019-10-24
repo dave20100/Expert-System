@@ -1,31 +1,27 @@
 {
-  "Quiz": {
-    "currentQuestion": {
-      "questionText": "How old are you",
-      "answers": [
-        {
-          "answer": "20",
-          "resultOfQuiz": "good",
-          "nextQuestion": {
+  "currentQuestion": {
+    "questionText": "How old are you",
+    "answers": [
+      {
+        "answer": "20",
+        "resultOfQuiz": "good",
+        "nextQuestion": {
 
-          }
-        },
-        {
-          "answer": "30",
-          "resultOfQuiz": "bad",
-          "nextQuestion": {
-
-
-          }
-        },
-        {
-          "answer": "40",
-          "resultOfQuiz": "very good",
-          "nextQuestion": {
-
-          }
         }
-      ]
-    }
+      },
+      {
+        "answer": "30",
+        "resultOfQuiz": "bad",
+        "nextQuestion": {
+
+        }
+      },
+      {
+        "answer": "40",
+        "nextQuestion": {
+
+        }
+      }
+    ]
   }
 }

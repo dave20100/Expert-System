@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ExpertSystem
 {
-    class Quiz
+    public class Quiz
     {
-        Question currentQuestion { get; set; }
+        public Quiz(Question currentQuestion)
+        {
+            this.currentQuestion = currentQuestion;
+        }
+
+        public Question currentQuestion { get; set; }
 
         public string getQuestion()
         {
