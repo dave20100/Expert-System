@@ -37,7 +37,7 @@ namespace ExpertSystem
         {
             string content = (sender as Button).Content.ToString();
             Answer answer = currentQuestion.answers.FirstOrDefault(ans => ans.answer == content);
-            
+            bgGrid.Background = Brushes.Beige;
             if(content == "Restart")
             {
                 currentQuestion = quiz.currentQuestion;
@@ -48,6 +48,7 @@ namespace ExpertSystem
             if(answer.resultOfQuiz != null)
             {
                 questionField.Text = answer.resultOfQuiz;
+                bgGrid.Background = Brushes.LightGreen;
                 answersField.ItemsSource = new List<Answer>() { new Answer("Restart", "", null) };
                 return;
             }

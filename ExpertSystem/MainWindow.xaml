@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:ExpertSystem"
         mc:Ignorable="d"
         Title="Expert System" Height="400" Width="500">
-    <Grid Margin="0,0,0,-21" Background="Beige">
+    <Grid Margin="0,0,0,-21" Background="Beige" Name="bgGrid">
         <TextBlock Name="questionField" FontWeight="Bold" FontSize="30" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="91" Width="472"/>
-        <ItemsControl Name="answersField" Margin="10,132,10,5" VerticalAlignment="Center" HorizontalAlignment="Center" Height="253" Width="472">
+        <ItemsControl Name="answersField" Margin="10,218,10,5" VerticalAlignment="Center" HorizontalAlignment="Center" Height="167" Width="472">
             <ItemsControl.ItemTemplate>
 
                 <DataTemplate>
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Button  Click="Button_Click" Width="200" Margin="0,4,0,0" Height="25" Content="{Binding answer}"></Button>
+                        <Button  Click="Button_Click" Width="300" Margin="0,8,0,0" Height="25" Content="{Binding answer}"></Button>
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>

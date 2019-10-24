@@ -4,23 +4,23 @@
     "answers": [
       {
         "answer": "20",
-        "resultOfQuiz": "good",
         "nextQuestion": {
-
+          "questionText": "How old are you",
+          "answers": [
+            {
+              "answer": "ddd",
+              "resultOfQuiz": "Hello"
+            }
+          ]
         }
       },
       {
         "answer": "30",
-        "resultOfQuiz": "bad",
-        "nextQuestion": {
-
-        }
+        "nextQuestion": {}
       },
       {
         "answer": "40",
-        "nextQuestion": {
-
-        }
+        "nextQuestion": {}
       }
     ]
   }
