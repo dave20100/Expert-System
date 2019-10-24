@@ -20,7 +20,6 @@ namespace ExpertSystem
         public static Quiz generateQuiz()
         {
             var quiz = JsonConvert.DeserializeObject<Quiz>(readJson("treeSource.json"));
-            Console.WriteLine(quiz.getQuestion());
             return quiz;
         }
     }

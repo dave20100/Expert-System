@@ -21,15 +21,39 @@ namespace ExpertSystem
     public partial class MainWindow : Window
     {
         Quiz quiz;
+        Question currentQuestion;
         public MainWindow()
         {
             InitializeComponent();
-            Loaded += MainWindow_Loaded;
+            quiz = JsonParser.generateQuiz();
+            currentQuestion = quiz.currentQuestion;
+            
+            answersField.ItemsSource = currentQuestion.answers;
+            questionField.Text = currentQuestion.questionText;
         }
 
-        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            quiz = JsonParser.generateQuiz();
+            string content = (sender as Button).Content.ToString();
+            Answer answer = currentQuestion.answers.FirstOrDefault(ans => ans.answer == content);
+            
+            if(answer.resultOfQuiz != null)
+            {
+                questionField.Text = answer.resultOfQuiz;
+                answersField.ItemsSource = new List<Answer>() { new Answer("Restart", "", null) };
+                return;
+            }
+            if(content == "Restart")
+            {
+                currentQuestion = quiz.currentQuestion;
+            }
+            else 
+            {
+                currentQuestion = answer.nextQuestion;
+            }
+            answersField.ItemsSource = currentQuestion.answers;
+            questionField.Text = currentQuestion.questionText;
         }
     }
 }
