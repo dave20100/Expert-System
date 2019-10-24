@@ -38,20 +38,20 @@ namespace ExpertSystem
             string content = (sender as Button).Content.ToString();
             Answer answer = currentQuestion.answers.FirstOrDefault(ans => ans.answer == content);
             
+            if(content == "Restart")
+            {
+                currentQuestion = quiz.currentQuestion;
+                answersField.ItemsSource = currentQuestion.answers;
+                questionField.Text = currentQuestion.questionText;
+                return;
+            }
             if(answer.resultOfQuiz != null)
             {
                 questionField.Text = answer.resultOfQuiz;
                 answersField.ItemsSource = new List<Answer>() { new Answer("Restart", "", null) };
                 return;
             }
-            if(content == "Restart")
-            {
-                currentQuestion = quiz.currentQuestion;
-            }
-            else 
-            {
-                currentQuestion = answer.nextQuestion;
-            }
+            currentQuestion = answer.nextQuestion;
             answersField.ItemsSource = currentQuestion.answers;
             questionField.Text = currentQuestion.questionText;
         }
