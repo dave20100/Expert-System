@@ -81,13 +81,33 @@
                                     {
                                         "answer": "3D",
                                         "nextQuestion": {
-
+                                            "questionText": "Na czym bardziej ci zalezy",
+                                            "answers": [
+                                                {
+                                                    "answer": "Grafika",
+                                                    "resultOfQuiz": "C++ (CryEngine)"
+                                                },
+                                                {
+                                                    "answer": "Stabilnosc",
+                                                    "resultOfQuiz": "C# (Unity)"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
                                         "answer": "2D",
                                         "nextQuestion": {
-
+                                            "questionText": "Czy jezyk powinien byc latwy",
+                                            "answers": [
+                                                {
+                                                    "answer": "Tak",
+                                                    "resultOfQuiz": "Python (PyGame)"
+                                                },
+                                                {
+                                                    "answer": "Nie",
+                                                    "resultOfQuiz": "C# (Unity)"
+                                                }
+                                            ]
                                         }
                                     }
                                 ]
