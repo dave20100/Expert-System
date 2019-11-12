@@ -3,9 +3,21 @@
         "questionText": "Czemu chcesz nauczyc sie programowac?",
         "answers": [
             {
+                "answer": "Z powodu studiow",
+                "nextQuestion": {
+                    "questionText": "",
+                    "answers": [
+
+                    ]
+                }
+            },
+            {
                 "answer": "Dla zabawy",
                 "nextQuestion": {
-                    "questionText": ""
+                    "questionText": "",
+                    "answers": [
+
+                    ]
                 }
             },
             {
