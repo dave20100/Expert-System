@@ -1,6 +1,6 @@
 {
     "currentQuestion": {
-        "questionText": "Czemu chcesz nauczyc sie programowac",
+        "questionText": "Czemu chcesz nauczyc sie programowac?",
         "answers": [
             {
                 "answer": "Dla zabawy",
@@ -10,36 +10,62 @@
             },
             {
                 "answer": "Znalezienie pracy",
-                "nextQuestion": {}
-            },
-            {
-                "answer": "Znalezienie pracy",
                 "nextQuestion": {
-                    "questionText": "Czym sie interesujesz",
+                    "questionText": "Czym sie interesujesz?",
                     "answers": [
                         {
-                            "answer": "Aplikacje internetowe",
+                            "answer": "Aplikacje Internetowe",
                             "nextQuestion": {}
+                        },
+                        {
+                            "answer": "Elektronika",
+                            "nextQuestion": {
+                                "questionText": "Jakiej skali planujesz projekty",
+                                "answers": [
+                                    {
+                                        "answer": "Duze",
+                                        "resultOfQuiz": "C++"
+                                    },
+                                    {
+                                        "answer": "Male",
+                                        "resultOfQuiz": "C"
+                                    }
+                                ]
+                            }
                         },
                         {
                             "answer": "Aplikacje mobilne",
                             "nextQuestion": {
-                                "questionText": "Jakie oprogramowanie posiada twoj telefon komorkowy",
+                                "questionText": "Jakie oprogramowanie posiada twoj telefon komorkowy?",
                                 "answers": [
                                     {
                                         "answer": "IOS",
-                                        "nextQuestion": {}
+                                        "nextQuestion": {
+                                            "questionText": "Czy zalezy ci na poznaniu najnowszych technologii?",
+                                            "answers": [
+                                                {
+                                                    "answer": "Tak",
+                                                    "resultOfQuiz": "Swift"
+                                                },
+                                                {
+                                                    "answer": "Nie",
+                                                    "resultOfQuiz": "Objective C"
+                                                }
+                                            ]
+                                        }
                                     },
                                     {
                                         "answer": "Android",
                                         "nextQuestion": {
-                                            "questionText": "Na czym zalezy ci bardziej",
+                                            "questionText": "Na czym zalezy ci bardziej?",
                                             "answers": [
                                                 {
-                                                    "answer": "Szybkosc"
+                                                    "answer": "Szybkosc",
+                                                    "resultOfQuiz": "Kotlin"
                                                 },
                                                 {
-                                                    "answer": "Popularnosc"
+                                                    "answer": "Popularnosc",
+                                                    "resultOfQuiz": "Java"
                                                 }
                                             ]
                                         }
@@ -49,11 +75,83 @@
                         },
                         {
                             "answer": "Gry komputerowe",
-                            "nextQuestion": {}
+                            "nextQuestion": {
+                                "questionText": "Jakiego typu gry chcialbys tworzyc",
+                                "answers": [
+                                    {
+                                        "answer": "3D",
+                                        "nextQuestion": {
+
+                                        }
+                                    },
+                                    {
+                                        "answer": "2D",
+                                        "nextQuestion": {
+
+                                        }
+                                    }
+                                ]
+                            }
                         },
                         {
                             "answer": "Nauka",
-                            "nextQuestion": {}
+                            "nextQuestion": {
+                                "questionText": "Czy interesujesz sie matematyka?",
+                                "answers": [
+                                    {
+                                        "answer": "Tak",
+                                        "nextQuestion": {
+                                            "questionText": "Co bardziej lubisz",
+                                            "answers": [
+                                                {
+                                                    "answer": "Matematyczne grafy",
+                                                    "resultOfQuiz": "Matlab"
+                                                },
+                                                {
+                                                    "answer": "Dowody matematyczne",
+                                                    "resultOfQuiz": "Fortran"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "answer": "Nie",
+                                        "nextQuestion": {
+                                            "questionText": "Ktory temat bardziej cie interesuje",
+                                            "answers": [
+                                                {
+                                                    "answer": "Samouczace sie maszyny",
+                                                    "resultOfQuiz": "Python"
+                                                },
+                                                {
+                                                    "answer": "Analiza danych statystycznych",
+                                                    "resultOfQuiz": "R"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "answer": "Aplikacje desktopowe",
+                            "nextQuestion": {
+                                "questionText": "Jaki system operacyjny cie interesuje",
+                                "answers": [
+                                    {
+                                        "answer": "MacOs",
+                                        "resultOfQuiz": "Swift"
+                                    },
+                                    {
+                                        "answer": "Windows",
+                                        "resultOfQuiz": "C#"
+                                    },
+                                    {
+                                        "answer": "Linux",
+                                        "resultOfQuiz": "C++"
+                                    }
+                                ]
+                            }
                         }
                     ]
                 }

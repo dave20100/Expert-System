@@ -47,7 +47,7 @@ namespace ExpertSystem
             }
             if(answer.resultOfQuiz != null)
             {
-                questionField.Text = answer.resultOfQuiz;
+                questionField.Text = "Twoj jezyk programowania to " + answer.resultOfQuiz;
                 bgGrid.Background = Brushes.LightGreen;
                 answersField.ItemsSource = new List<Answer>() { new Answer("Restart", "", null) };
                 return;
