@@ -1,27 +1,63 @@
 {
-  "currentQuestion": {
-    "questionText": "How old are you",
-    "answers": [
-      {
-        "answer": "20",
-        "nextQuestion": {
-          "questionText": "How old are you",
-          "answers": [
+    "currentQuestion": {
+        "questionText": "Czemu chcesz nauczyc sie programowac",
+        "answers": [
             {
-              "answer": "ddd",
-              "resultOfQuiz": "Hello"
+                "answer": "Dla zabawy",
+                "nextQuestion": {
+                    "questionText": ""
+                }
+            },
+            {
+                "answer": "Znalezienie pracy",
+                "nextQuestion": {}
+            },
+            {
+                "answer": "Znalezienie pracy",
+                "nextQuestion": {
+                    "questionText": "Czym sie interesujesz",
+                    "answers": [
+                        {
+                            "answer": "Aplikacje internetowe",
+                            "nextQuestion": {}
+                        },
+                        {
+                            "answer": "Aplikacje mobilne",
+                            "nextQuestion": {
+                                "questionText": "Jakie oprogramowanie posiada twoj telefon komorkowy",
+                                "answers": [
+                                    {
+                                        "answer": "IOS",
+                                        "nextQuestion": {}
+                                    },
+                                    {
+                                        "answer": "Android",
+                                        "nextQuestion": {
+                                            "questionText": "Na czym zalezy ci bardziej",
+                                            "answers": [
+                                                {
+                                                    "answer": "Szybkosc"
+                                                },
+                                                {
+                                                    "answer": "Popularnosc"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "answer": "Gry komputerowe",
+                            "nextQuestion": {}
+                        },
+                        {
+                            "answer": "Nauka",
+                            "nextQuestion": {}
+                        }
+                    ]
+                }
             }
-          ]
-        }
-      },
-      {
-        "answer": "30",
-        "nextQuestion": {}
-      },
-      {
-        "answer": "40",
-        "nextQuestion": {}
-      }
-    ]
-  }
+        ]
+    }
 }
