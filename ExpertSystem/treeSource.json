@@ -3,15 +3,6 @@
         "questionText": "Czemu chcesz nauczyc sie programowac?",
         "answers": [
             {
-                "answer": "Z powodu studiow",
-                "nextQuestion": {
-                    "questionText": "",
-                    "answers": [
-
-                    ]
-                }
-            },
-            {
                 "answer": "Dla zabawy",
                 "nextQuestion": {
                     "questionText": "Czy chcesz zeby jezyk skladal sie z nieduzej ilosci znakow",
@@ -64,25 +55,38 @@
                                     {
                                         "answer": "Znakow",
                                         "nextQuestion": {
-                                            "questionText": "",
+                                            "questionText": "Z ilu znakow?",
                                             "answers": [
-                                                ""
+                                                {
+                                                    "answer": "Jednego",
+                                                    "resultOfQuiz": "Whitespace"
+                                                },
+                                                {
+                                                    "answer": "Wiecej",
+                                                    "resultOfQuiz": "Brainfuck"
+                                                }
                                             ]
                                         }
                                     }
                                 ]
                             }
-                        }
+                        },
                         {
                             "answer": "Nie",
                             "nextQuestion": {
-                                "questionText": "",
+                                "questionText": "Czy jezyk ma byc mozliwy do nauczenia?",
                                 "answers": [
-                                    
+                                    {
+                                        "answer": "Tak",
+                                        "resultOfQuiz": "Glass"
+                                    },
+                                    {
+                                        "answer": "Nie",
+                                        "resultOfQuiz": "Malbolge"
+                                    }
                                 ]
                             }
                         }
-
                     ]
                 }
             },
@@ -93,7 +97,12 @@
                     "answers": [
                         {
                             "answer": "Aplikacje Internetowe",
-                            "nextQuestion": {}
+                            "nextQuestion": {
+                                "questionText": "Na czym bardziej ci zalezy w stronach internetowych?",
+                                "answers": [
+                                    
+                                ]
+                            }
                         },
                         {
                             "answer": "Elektronika",
