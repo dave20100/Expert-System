@@ -5,12 +5,12 @@
             {
                 "answer": "Dla zabawy",
                 "nextQuestion": {
-                    "questionText": "Czy chcesz zeby jezyk skladal sie z nieduzej ilosci znakow",
+                    "questionText": "Czy chcesz zeby jezyk skladal sie z nieduzej ilosci znakow?",
                     "answers": [
                         {
                             "answer": "Tak",
                             "nextQuestion": {
-                                "questionText": "Z czego glownie powinien skladac sie twoj jezyk",
+                                "questionText": "Z czego glownie powinien skladac sie twoj jezyk?",
                                 "answers": [
                                     {
                                         "answer": "Slow",
@@ -98,16 +98,51 @@
                         {
                             "answer": "Aplikacje Internetowe",
                             "nextQuestion": {
-                                "questionText": "Na czym bardziej ci zalezy w stronach internetowych?",
+                                "questionText": "Co brzmi wedlug ciebie lepiej?",
                                 "answers": [
-                                    
+                                    {
+                                        "answer": "Front End (wyglad strony)",
+                                        "nextQuestion": {
+                                            "questionText": "Ktora z tych nazw brzmi najlepiej?",
+                                            "answers": [
+                                                {
+                                                    "answer": "Angular",
+                                                    "resultOfQuiz": "Javascript Angular Framework"
+                                                },
+                                                {
+                                                    "answer": "React.js",
+                                                    "resultOfQuiz": "Javascript React JS Framework"
+                                                },
+                                                {
+                                                    "answer": "Vue.js",
+                                                    "resultOfQuiz": "Javascript Vue.js Framework"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "answer": "Back End (funkcjonalnosc strony)",
+                                        "nextQuestion": {
+                                            "questionText": "Czy lubisz firme microsoft?",
+                                            "answers": [
+                                                {
+                                                    "answer": "Nie",
+                                                    "resultOfQuiz": "Ruby on rails"
+                                                },
+                                                {
+                                                    "answer": "Tak",
+                                                    "resultOfQuiz": "C#"
+                                                }
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         },
                         {
                             "answer": "Elektronika",
                             "nextQuestion": {
-                                "questionText": "Jakiej skali planujesz projekty",
+                                "questionText": "Jakiej skali planujesz projekty?",
                                 "answers": [
                                     {
                                         "answer": "Duze",
@@ -163,7 +198,7 @@
                         {
                             "answer": "Gry komputerowe",
                             "nextQuestion": {
-                                "questionText": "Jakiego typu gry chcialbys tworzyc",
+                                "questionText": "Jakiego typu gry chcialbys tworzyc?",
                                 "answers": [
                                     {
                                         "answer": "3D",
@@ -184,7 +219,7 @@
                                     {
                                         "answer": "2D",
                                         "nextQuestion": {
-                                            "questionText": "Czy jezyk powinien byc latwy",
+                                            "questionText": "Czy jezyk powinien byc latwy?",
                                             "answers": [
                                                 {
                                                     "answer": "Tak",
@@ -208,7 +243,7 @@
                                     {
                                         "answer": "Tak",
                                         "nextQuestion": {
-                                            "questionText": "Co bardziej lubisz",
+                                            "questionText": "Co bardziej lubisz?",
                                             "answers": [
                                                 {
                                                     "answer": "Matematyczne grafy",
