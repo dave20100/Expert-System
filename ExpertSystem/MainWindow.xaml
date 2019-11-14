@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExpertSystem"
         mc:Ignorable="d"
-        Title="Expert System" Height="400" Width="500">
+        WindowStartupLocation="CenterScreen"
+        Title="Expert System" Height="400" Width="511.393"
+        KeyDown="Window_KeyDown"
+        >
     <Grid Margin="0,0,0,-21" Background="Beige" Name="bgGrid">
-        <TextBlock Name="questionField" FontWeight="Bold" FontSize="30" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="91" Width="472"/>
+        <TextBlock Name="questionField" FontWeight="Bold" FontSize="30" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="100" Width="483"/>
         <ItemsControl Name="answersField" Margin="10,130,10,5" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="472">
             <ItemsControl.ItemTemplate>
 

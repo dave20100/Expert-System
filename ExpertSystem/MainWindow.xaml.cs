@@ -40,9 +40,7 @@ namespace ExpertSystem
             bgGrid.Background = Brushes.Beige;
             if(content == "Restart")
             {
-                currentQuestion = quiz.currentQuestion;
-                answersField.ItemsSource = currentQuestion.answers;
-                questionField.Text = currentQuestion.questionText;
+                this.RestartQuiz();
                 return;
             }
             if(answer.resultOfQuiz != null)
@@ -55,6 +53,22 @@ namespace ExpertSystem
             currentQuestion = answer.nextQuestion;
             answersField.ItemsSource = currentQuestion.answers;
             questionField.Text = currentQuestion.questionText;
+        }
+
+        private void RestartQuiz()
+        {
+            currentQuestion = quiz.currentQuestion;
+            answersField.ItemsSource = currentQuestion.answers;
+            questionField.Text = currentQuestion.questionText;
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.R)
+            {
+                bgGrid.Background = Brushes.Beige;
+                this.RestartQuiz();
+            }
         }
     }
 }
