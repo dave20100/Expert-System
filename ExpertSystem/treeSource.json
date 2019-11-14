@@ -14,8 +14,74 @@
             {
                 "answer": "Dla zabawy",
                 "nextQuestion": {
-                    "questionText": "",
+                    "questionText": "Czy chcesz zeby jezyk skladal sie z nieduzej ilosci znakow",
                     "answers": [
+                        {
+                            "answer": "Tak",
+                            "nextQuestion": {
+                                "questionText": "Z czego glownie powinien skladac sie twoj jezyk",
+                                "answers": [
+                                    {
+                                        "answer": "Slow",
+                                        "nextQuestion": {
+                                            "questionText": "Czym wolisz sie poslugiwac?",
+                                            "answers": [
+                                                {
+                                                    "answer": "Jedno slowo",
+                                                    "nextQuestion": {
+                                                        "questionText": "Ktore slowo wolisz?",
+                                                        "answers": [
+                                                            {
+                                                                "answer": "Chicken",
+                                                                "resultOfQuiz": "Chicken"
+                                                            },
+                                                            {
+                                                                "answer": "Ook",
+                                                                "resultOfQuiz": "Ook"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "answer": "Zdania",
+                                                    "nextQuestion": {
+                                                        "questionText": "Czy lubisz wiersze?",
+                                                        "answers": [
+                                                            {
+                                                                "answer": "tak",
+                                                                "resultOfQuiz": "Shakespeare"
+                                                            },
+                                                            {
+                                                                "answer": "Nie",
+                                                                "resultOfQuiz": "LOLCODE"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "answer": "Znakow",
+                                        "nextQuestion": {
+                                            "questionText": "",
+                                            "answers": [
+                                                ""
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                        {
+                            "answer": "Nie",
+                            "nextQuestion": {
+                                "questionText": "",
+                                "answers": [
+                                    
+                                ]
+                            }
+                        }
 
                     ]
                 }
